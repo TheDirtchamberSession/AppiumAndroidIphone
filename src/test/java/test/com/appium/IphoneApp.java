@@ -11,9 +11,9 @@ public class IphoneApp extends AppiumSetup{
 
         prepareCapabilitiesForIphone();
 
-        driver.findElement(By.name("Continue")).click();
-        Thread.sleep(4000);
-        driver.findElement(By.name("Don’t Allow"));
+//        driver.findElement(By.name("Continue")).click();
+//        Thread.sleep(4000);
+//        driver.findElement(By.name("Don’t Allow"));
         Thread.sleep(4000);
     }
 }
