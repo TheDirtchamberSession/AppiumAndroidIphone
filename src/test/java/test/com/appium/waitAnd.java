@@ -1,19 +1,15 @@
 package test.com.appium;
-;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class WaitAnd {
-
-    public static AppiumDriver<MobileElement> driver;
+public class waitAnd {
 
     WebDriverWait wait;
 
-    public WaitAnd (WebDriverWait wait){
+    public waitAnd(WebDriverWait wait){
         this.wait = wait;
 
     }
