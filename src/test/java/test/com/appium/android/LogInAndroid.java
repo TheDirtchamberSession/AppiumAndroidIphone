@@ -1,9 +1,11 @@
-package test.com.appium;
-
+package test.com.appium.android;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import test.com.appium.AppiumSetup;
 import test.com.appium.utility.CoverageLogIn;
+
+
 import java.net.MalformedURLException;
 
 

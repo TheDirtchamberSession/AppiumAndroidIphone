@@ -10,11 +10,11 @@ import java.util.concurrent.TimeUnit;
 
 public class AppiumSetup {
 
-    AppiumDriver<WebElement> driver;
-    test.com.appium.waitAnd waitAnd;
-    WebDriverWait wait;
+    public AppiumDriver<WebElement> driver;
+    public test.com.appium.waitAnd waitAnd;
+    public WebDriverWait wait;
 
-    protected DesiredCapabilities capabilities;
+     DesiredCapabilities capabilities;
 
     public void setUp() throws MalformedURLException {
         URL url = new URL("http://0.0.0.0:4723/wd/hub");
@@ -35,7 +35,7 @@ public class AppiumSetup {
 
     }
 
-    protected void prepareCapabilitiesForAndroid() {
+     protected void prepareCapabilitiesForAndroid() {
 
         capabilities = new DesiredCapabilities();
 

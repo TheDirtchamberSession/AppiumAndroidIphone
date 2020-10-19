@@ -5,7 +5,7 @@
 
     <test name="Image">
         <classes>
-            <class name="test.com.appium.LogInAndroid" />
+            <class name="test.com.appium.android.LogInAndroid" />
         </classes>
     </test>
 
