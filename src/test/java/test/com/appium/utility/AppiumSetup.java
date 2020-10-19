@@ -1,9 +1,10 @@
-package test.com.appium;
+package test.com.appium.utility;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -11,17 +12,17 @@ import java.util.concurrent.TimeUnit;
 public class AppiumSetup {
 
     public AppiumDriver<WebElement> driver;
-    public test.com.appium.waitAnd waitAnd;
+    public WaitAnd waitAnd;
     public WebDriverWait wait;
 
      DesiredCapabilities capabilities;
 
     public void setUp() throws MalformedURLException {
-        URL url = new URL("http://0.0.0.0:4723/wd/hub");
+        URL url = new URL(WidgetPath.INSTANCE.getBaseURL());
         driver = new AppiumDriver<>(url, capabilities);
         wait = new WebDriverWait(driver, 25);
         driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-        waitAnd = new waitAnd(wait);
+        waitAnd = new WaitAnd(wait);
     }
 
     protected void prepareCapabilitiesForIphone() {
